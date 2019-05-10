@@ -1,0 +1,23 @@
+index:
+     path: /
+     controller: App\Controller\IndexController::index
+
+blog:
+     path: /blog
+     controller: App\Controller\BlogController::index
+
+post:
+     path: /blog/post/{id}
+     controller: App\Controller\PostEntryController::index
+
+admin:
+     path: /admin
+     controller: App\Controller\AdminController::index
+
+admin/home:
+     path: /admin/home
+     controller: App\Controller\AdminController::home
+
+admin/post:
+     path: /admin/postentry
+     controller: App\Controller\AdminController::createPost

@@ -1,0 +1,22 @@
+composer require server --dev
+
+php bin/console server:start
+
+php bin/console server:stop
+
+
+
+php bin/console make:controller
+
+
+php bin/console make:entity PostEntry
+
+
+php bin/console make:migration
+
+php bin/console doctrine:migrations:migrate
+
+php bin/console doctrine:schema:update --force
+
+
+php bin/console make:user
